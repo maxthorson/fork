@@ -26,7 +26,7 @@ button {
     user-select: none;
 }
 
-.banner__close {
+.banner__redir {
     position: relative;
     user-select: none;
     width: 30px;
@@ -203,7 +203,7 @@ button {
     line-height: 1.4;
 }
 
-.banner__close {
+.banner__redir {
     background: none;
     border: none;
     cursor: pointer;
