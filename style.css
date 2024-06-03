@@ -209,3 +209,14 @@ button {
     cursor: pointer;
     padding-left: 15px;
 }
+
+.movie_container{
+    user-select: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    top: 200px;
+}
