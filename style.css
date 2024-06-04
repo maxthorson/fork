@@ -209,24 +209,6 @@ button {
     cursor: pointer;
     padding-left: 15px;
 }
-.ligma {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
 
 .ligma {
     position: absolute;
@@ -254,7 +236,7 @@ button {
     flex-wrap: wrap;
     align-content: center;
     position: relative;
-    top: 220px;
+    padding: 50px;
 }
 
 input[type=url] {
@@ -268,6 +250,8 @@ input[type=url] {
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 input[type=url]:before {
@@ -287,15 +271,15 @@ input[type=url]:before {
     border-radius: 10px;
 }
 
-.input[type=url]:active {
+.input[type=url]:focus {
     color: #000
 }
 
-input[type=url]:active:after {
+input[type=url]:focus:after {
     background: transparent;
 }
 
-input[type=url]:hover:before {
+input[type=url]:focus:before {
     opacity: 1;
 }
 
