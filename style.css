@@ -59,22 +59,38 @@ button {
     user-select: none;
 }
 
+.button-container-papa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    user-select: none;
+    flex-wrap: wrap;
+}
+
 .glow-on-hover {
     width: 220px;
     height: 50px;
     border: none;
     outline: none;
     color: #cfcfcf;
-    background: #111;
+    background: #37373747;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    box-shadow: 10px 12px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #e0f2ff, #cae8ff, #b5deff, #96cefd, #78bbfa, #3892f3, #147af3, #0265dc, #147af3, #3892f3, #78bbfa, #96cefd, #b5deff, #cae8ff, #e0f2ff);
+    background: linear-gradient(80deg, #78bbfa, #3892f3, #147af3, #0265dc, #147af3, #3892f3, #78bbfa);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -83,7 +99,7 @@ button {
     filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
+    animation: glowing 20s ease-in-out infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
@@ -107,7 +123,7 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: #ffffff00;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -115,10 +131,10 @@ button {
 .button-container-bottom {
     position: absolute;
     top: 94%;
-    left: 96%;
+    left: 95%;
     transform: translate(-50%, -50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     user-select: none;
 }
